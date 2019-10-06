@@ -4,8 +4,8 @@ body{
 	height:100vh;
 	 background-color: #F9F5F1;
 	}
-	
-	
+
+
 	.sticky{
 	    position:fixed;
 	    top:0;
@@ -17,18 +17,18 @@ body{
 		background: rgba(0, 132, 137, 0.85);
 		 align-items: center;
 	}
-	
+
 	.sticky img {
  border-radius: 50%;
  max-width:100%;
   max-height: 100%;
- 
+
 }
 
 .sticky a {
   margin:auto;
 }
-	
+
 
 .hoverText {
   color: #fff;
@@ -37,17 +37,17 @@ body{
   opacity: 1;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  
+
  }
-	
+
  @media only screen and (min-width: 768px){
   	.sticky a:hover {
   opacity: 1;
   transition: all 0.3s ease-in-out 0.1s;
   font-size: 20px;
   border-radius: 10px/5px;
-  
-}} 
+
+}}
 
 .main-container{
 	width:100%;
@@ -55,7 +55,7 @@ body{
 	margin-left: auto;
     margin-right: auto;
 	}
-	
+
 .text{
 	text-align:justify;
 	margin:0;
@@ -63,7 +63,7 @@ body{
 
 @media only screen and (min-width: 768px){
 	#position{
- text-align: left !important; 
+ text-align: left !important;
 		}
 	.main-container{
 		  width:70%;
@@ -77,28 +77,28 @@ body{
 
 	.tr{
 	  display: table-row ;
-	 
-	 
+
+
 	}
 	.topic{
 	  display: table-cell;
 	  width: 15%;
-	 
-	  
+
+
 	}
 	.text{
 		display: table-cell;
 		width: 55%;
-	
+
 	}
 	 i{
    display:block;
 }
-  
+
 }
 
 
-	
+
 	.shadow {
 		box-shadow: 5px 5px 5px grey;
 		border-radius: 50%;
@@ -112,10 +112,10 @@ body{
 	padding: 0 0 10px;
     margin-top: 50px;
 	 }
-	 
+
 .teaser img{
     width:100%;
-  }	
+  }
 
 
 @media only screen and (min-width: 500px){
@@ -134,13 +134,14 @@ body{
 }
 
 .work-experience {
-    position: relative;  
- 
+    position: relative;
+		display: block;
+
  font-family: 'Montserrat', sans-serif;
   color: #4d696b;
    }
-   
-   
+
+
   #tab-background {
   padding: 10px;
   background-color: #fff;
@@ -151,7 +152,7 @@ body{
 position:relative;
 font-family: 'Montserrat', sans-serif;
   color: #4d696b;
-  
+
 
 }
 
@@ -209,7 +210,7 @@ position:relative;
 
 #position{
  text-align: center;
-text-transform: uppercase;   
+text-transform: uppercase;
  font-family: 'Lexend Deca', sans-serif;
 }
 
@@ -229,7 +230,7 @@ text-transform: uppercase;
       text-align: center;
       padding-top: 10px;
   }
-  
+
   .footer-center {
       color: #fff;
   text-align: center;
@@ -239,7 +240,7 @@ text-transform: uppercase;
    padding-top: 20px;
    padding-left:10px;
   font-family: 'Montserrat', sans-serif;
-  
+
   }
   .footer-center a{
       color: #fff;
@@ -250,7 +251,7 @@ text-transform: uppercase;
    padding-top: 10px;
    padding-left:10px;
   font-family: 'Montserrat', sans-serif;
-  
+
   }
 
 /*<-- gelary -->*/
@@ -267,7 +268,7 @@ text-transform: uppercase;
   font-size: 25px;
   border-radius: 10px;
   	z-index: 50;
-  
+
 }
 .certificate-container{
 	display: flex;
@@ -307,5 +308,43 @@ div.desc {
   clear: both;
 }
 
+/* style for language */
+.language{
+	display: none;
+}
+@media only screen and (min-width: 395px){
+.language{
+	height: 50px;
+	width: fit-content;
+	margin-right: 10px;
+	display: block;
+}
+
+.language > ul{
+		display: inline-flex;
+		list-style-type: none;
+		color: white;
+		cursor: pointer;
+	}
+
+	.language > ul >li:active{
+			font-weight:bold;
+		}
+}
+
+.deactivated{
+	display: none;
+}
+
+li#en {
+    padding-right: 5px;
+}
 
 
+li#de {
+    padding-left: 5px;
+}
+
+.on{
+	font-weight:bold;
+}
