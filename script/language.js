@@ -3,8 +3,15 @@
 	if(languageCookie.length == 0){
 		setLangCookie("en");
 		document.cookie = "path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT";
-	} else if (languageCookie.includes("de")){
-		window.onload= function(){changeLanguage("de")};
+	} 
+}
+
+function setDE(){
+	if (document.cookie.includes("de")){
+	     console.log("window not loaded");
+		 changeLanguage("de");
+		 console.log("window loaded");
+		
 	}
 }
 
