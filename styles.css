@@ -325,6 +325,7 @@ div.desc {
 		list-style-type: none;
 		color: white;
 		cursor: pointer;
+		text-transform: uppercase;
 	}
 
 	.language > ul >li:active{
