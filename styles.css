@@ -31,7 +31,7 @@ body{
 
 
 .hoverText {
-  color: #fff;
+  color: #4d696b;
   text-align: center;
   text-decoration: none;
   opacity: 1;
@@ -157,7 +157,7 @@ font-family: 'Montserrat', sans-serif;
 }
 
   address{
-	  margin:10px 0 18px;
+	  margin:18px 0 18px;
   }
 
 .certificate{
@@ -309,10 +309,8 @@ div.desc {
 }
 
 /* style for language */
-.language{
-	display: none;
-}
-@media only screen and (min-width: 395px){
+
+
 .language{
 	height: 50px;
 	width: fit-content;
@@ -331,7 +329,7 @@ div.desc {
 	.language > ul >li:active{
 			font-weight:bold;
 		}
-}
+
 
 .deactivated{
 	display: none;
