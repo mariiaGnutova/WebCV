@@ -1,17 +1,17 @@
  function getlangCookie(){
-	var languageCookie = document.cookie;
-	if(languageCookie.length == 0){
+	var siteCookie = document.cookie;
+	if(siteCookie.length == 0){
 		setLangCookie("en");
 		document.cookie = "path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT";
-	} 
+	}
 }
 
 function setDE(){
-	if (document.cookie.includes("de")){
+	if ((getCookie('language').localeCompare('de')) == 0){
 	     console.log("window not loaded");
 		 changeLanguage("de");
 		 console.log("window loaded");
-		
+
 	}
 }
 
@@ -49,4 +49,23 @@ function changeLanguage(elementId){
     workExperience[0].classList.remove("deactivated");
 	setLangCookie("en");
   }
+}
+
+
+// getCookie taken frome https://www.w3schools.com/js/js_cookies.asp
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
 }
