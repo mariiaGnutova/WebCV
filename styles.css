@@ -279,6 +279,10 @@ text-transform: uppercase;
 div.desc {
   padding: 5px;
   text-align: center;
+	/* list-style-type: none;
+	color: white;
+	cursor: pointer;
++ text-transform:uppercase; */
 }
 
 /** {*/
@@ -316,7 +320,7 @@ div.desc {
 	width: fit-content;
 	margin-right: 10px;
 	display: block;
-	right: 10px;
+	right: 7px;
     position: fixed;
 }
 
