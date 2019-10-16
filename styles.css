@@ -316,6 +316,8 @@ div.desc {
 	width: fit-content;
 	margin-right: 10px;
 	display: block;
+	right: 10px;
+    position: fixed;
 }
 
 .language > ul{
